@@ -72,10 +72,9 @@
             }
         },
         methods: {
-            validate (valueObj) {
-                const { value, min, max } = valueObj;
+            validate ({ value, min, max }) {
                 if (
-                    parseFloat(value)
+                    /^[0-9]\d{0,9}(\.\d{1,3})?%?$/.test(value)
                     && value >= min
                     && value <= max
                 ) {

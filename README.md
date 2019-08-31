@@ -1,5 +1,17 @@
 # lendico
 
+## Description
+```
+loan calculator widget
+```
+## Usage
+```
+import widget from the /path/to/widget
+and use as a plugin
+Then in template add <calculator></calculator>
+You can set currency and input values(default, min, max) through params 
+
+```
 ## Project setup
 ```
 npm install
@@ -17,7 +29,7 @@ npm run build
 
 ### Run your tests
 ```
-npm run test
+npm run test:unit
 ```
 
 ### Lints and fixes files
